@@ -61,11 +61,10 @@ namespace Sat.Recruitment.Test
             Assert.True(result > 0);
         }
 
-
         [Fact]
         public void Test5()
         {
-            IUserType userType = new UserNormal();
+            IUserType userType = new UserPremiun();
             var result = userType.GetMoney("5253");
             Assert.True(result > 0);
         }
